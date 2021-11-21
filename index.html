@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mohamed Kotb Resume and Portfolio</title>
+        <meta name="description" content="I am a Mahine learning & Robotics Engineer."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content="images/os.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1700">
+        <meta property="og:image:height" content="846">
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Mohamed Kotb"/>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body id="top">
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script> 
+        <style>
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color: #f2b70562;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+
+            #myBtn:hover {
+                background-color: #555;
+            }
+        </style>
+        <div class="page-content">
+            <div>
+                <script src="../particles.js"></script>
+                <script src="js/app.js"></script>
+                <script>
+                    var TxtType = function (el, toRotate, period) {
+                        this.toRotate = toRotate;
+                        this.el = el;
+                        this.loopNum = 0;
+                        this.period = parseInt(period, 10) || 2000;
+                        this.txt = '';
+                        this.tick();
+                        this.isDeleting = false;
+                    };
+
+                    TxtType.prototype.tick = function () {
+                        var i = this.loopNum % this.toRotate.length;
+                        var fullTxt = this.toRotate[i];
+
+                        if (this.isDeleting) {
+                            this.txt = fullTxt.substring(0, this.txt.length - 1);
+                        } else {
+                            this.txt = fullTxt.substring(0, this.txt.length + 1);
+                        }
+
+                        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+                        var that = this;
+                        var delta = 200 - Math.random() * 100;
+
+                        if (this.isDeleting) {
+                            delta /= 2;
+                        }
+
+                        if (!this.isDeleting && this.txt === fullTxt) {
+                            delta = this.period;
+                            this.isDeleting = true;
+                        } else if (this.isDeleting && this.txt === '') {
+                            this.isDeleting = false;
+                            this.loopNum ++;
+                            delta = 500;
+                        }
+
+                        setTimeout(function () {
+                            that.tick();
+                        }, delta);
+                    };
+
+                    window.onload = function () {
+                        var elements = document.getElementsByClassName('typewrite');
+                        for (var i = 0; i < elements.length; i++) {
+                            var toRotate = elements[i].getAttribute('data-type');
+                            var period = elements[i].getAttribute('data-period');
+                            if (toRotate) {
+                                new TxtType(elements[i], JSON.parse(toRotate), period);
+                            }
+                        }
+                        // INJECT CSS
+                        var css = document.createElement("style");
+                        css.type = "text/css";
+                        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                        document.body.appendChild(css);
+                    };
+                </script>
+                <div class="profile-page">
+
+                    <div id="particles-js">
+                        <div class="wrapper">
+                            <div class="page-header page-header-small" filter-color="green">
+                                <div class="page-header-image" data-parallax="true" style="background-image: url('images/header-bg.jpg');"></div>
+                                <div class="container">
+                                    <div class="content-center">
+                                        <div class="cc-profile-image">
+                                            <img src="images/test.jpg" alt="Image" />
+                                        </div>
+                                        <h2 class="category text-white"  >Mohamed Kotb</h2>                                     
+                                        <p class="category text-white">Machine Learning | Robotics engineer
+                                            </p>
+                                            <a class="btn btn-primary smooth-scroll mr-3" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Contact Me</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <div class="container">
+                                        <div class="button-container">
+                                            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/Mohamedkotb97 "rel="tooltip" title="check my projects on Github">
+                                                <i class="fa fa-github"aria-hidden="true"></i>
+                                            </a>
+                                            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.facebook.com/em4aak/" rel="tooltip" title="Add me on facebook">
+                                                <i class="fa fa-facebook"aria-hidden="true"></i>
+                                            </a>
+                                            <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/mohamed-ali-854734116/" rel="tooltip" title="linkedin">
+                                                <i class="fa fa-linkedin"aria-hidden="true"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="about">
+                    <div class="container">
+                        <div class="card" data-aos="fade-up" data-aos-offset="10">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="card-body">
+                                        <h1 class="h4 mt-0 title">About</h1>
+                                        <p>I am a graduate mechatronics engineer (class of 2020) with hands-on experience in machine learning and robotics. Passionate about increasing the cognitive abilities of machines and robots, making their interaction with their environment smoother and smarter. Always seeking opportunities to contribute and improve my skills by working on projects and conducting research in robotics and machine learning.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="card-body">
+                                        <div class="h4 mt-0 title">Basic Information</div>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <strong class="text-uppercase">Age:</strong>
+                                            </div>
+                                            <div class="col-sm-8">24</div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-4">
+                                                <strong class="text-uppercase">Email:</strong>
+                                            </div>
+                                            <div class="col-sm-8">Mohamed.ali.kotb@outlook.com</div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-4">
+                                                <strong class="text-uppercase">Language:</strong>
+                                            </div>
+                                            <div class="col-sm-8">English, Arabic</div>
+                                        </div>
+                                        <div class="row mt-3">
+                                            <div class="col-sm-4">
+                                                <strong class="text-uppercase">Military:</strong>
+                                            </div>
+                                            <div class="col-sm-8">Exempt</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="skill">
+                    <div class="container">
+                        <h5 class="h5 text-center mb-4 title">Skills
+                        </h5>
+                        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Robotics Software (ROS, Robotic simulation)</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                <span class="progress-value">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Data engineering (Hadoop, Spark, ELK,etc)</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                                <span class="progress-value">80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Machine learning (Data exploration & analysis)</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                <span class="progress-value">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Deep Learning (Mainly CNN and ANN for ML tasks)</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
+                                                <span class="progress-value">75%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Dynamic modelling and Simulation</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                                <span class="progress-value">80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="progress-container progress-primary">
+                                            <span class="progress-badge">Computer Vision</span>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                                <span class="progress-value">85%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- more skills hahaa-->
+
+            </div>
+
+            <div class="section" id="experience">
+                <div class="container cc-experience">
+                    <h5 class="h4 text-center mb-4 title">Work Experience</h5>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/Madkour.png" alt="Image" width="150" height="150"/>
+                                <div class="h7 pt-2" style="text-align:center" >Madkour Group</div>
+                                <p class="category" style="text-align:center">8/2020-Present</p>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Research and Devolpment Software Engineer</div>
+
+                                    <p>
+                                        -Building models, prototyping concepts, conducting tests,collecting data to quantify performance.<br>
+                                        -Solid understanding of principals, theories and concepts in Mechanical, Electrical, or Software engineering.<br>
+                                        -Develops and adapts best practices to design and build medium complexity machine learning systems.<br>
+                                        -Use machine learning and statistical modeling techniques to develop and evaluate algorithms to improve performance, quality, data management and accuracy.<br>
+                                        -Work as part of an interdisciplinary team to design and analyze modules or systems.<br>
+                                        - Consultant and trainer in previously mentioned technologies.<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/Lincoln.webp" alt="Image" width="150" height="100"/>
+                                <div class="h7 pt-2" style="text-align:center" >University of Lincoln</div>
+                                <p class="category" style="text-align:center">10/2019-6/2020</p>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Research and Devolpment Robotics Engineer</div>
+                                    <p> -Collaborated with an interdisciplinary team of 4.<br>
+                                        -Enhancement to the novel grasp planning algorithm based on
+                                        gripper workspace spheres is presented.<br>
+                                        -ACCEPTED Research Papers on ICRA 2020(Robotics)
+                                        Number of paper (1673) on ICRA 2020 Workspace..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/Lincoln.webp" alt="Image" width="150" height="100"/>
+                                <div class="h7 pt-2" style="text-align:center" >University of Lincoln</div>
+                                <p class="category" style="text-align:center">6/2019-10/2019</p>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Research Assistant</div>
+
+                                    <p>
+                                        -Research exchange undergraduate student.<br>
+                                        -Lower Extremity Prosthesis (Validation by Machine-Vision).<br>
+                                        -Project: Designing, simulating, and manufacturing of active prosthetic leg (Six-bar linkage mechanism and SEA).<br>
+                                        -Use machine learning and statistical modeling techniques to develop and evaluate algorithms to improve performance, quality, data management and accuracy.<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="experience">
+                <div class="container cc-experience">
+                    <h5 class="h4 text-center mb-4 title">Projects</h5>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-9 cc-reference-header"><img src="images/Object-detection.png" alt="Image" width="200" height="210"/>
+
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Object Recognition for HQ Makdour</div>
+
+                                    <p>
+                                        Object Tracking using YOLOv3, Deep Sort and Tensorflow This repository implements YOLOv3 and Deep SORT in order to perfrom real-time object tracking. Yolov3 is an algorithm that uses deep convolutional neural networks to perform object detection. We can feed these object detections into Deep SORT (Simple Online and Realtime Tracking with a Deep Association Metric) in order for a real-time object tracker to be created.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/face.png" alt="Image" width="210" height="210"/>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Face Recognition for employee of Madkour</div>
+                                    <p> Real time face recognition with MobileFaceNet A real time face recognition pipeline Face detection: an ultra-light face detector + five points facial feature detector Face recognition: MobileFaceNet.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/mask.png" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Face Mask Detection for employee of Madkour</div>
+
+                                    <p>
+                                        The novel COVID-19 virus has forced us all to rethink how we live our everyday lives while keeping ourselves and others safe. Face masks have emerged as a simple and effective strategy for reducing the virus’s threat. Therefore, the goal of the project is to develop face mask detector using deep learning to use it in my company to know the violator and impose even a simple penalty.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/arm.jpg" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Industrial Robotic Arm 6 axis overload ( 2Kg )</div>
+
+                                    <p>
+                                        Designing, Modelling and Simulation of robotic arm. The frequency of this operator, it’s repeatability, lifetime etc. are to be found out. The choice of the end effector, it’s design and analysis should be carried out and documented.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/move.png" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Move Base Sequence (ROS)</div>
+
+                                    <p>
+                                        This is a ROS package that uses a ROS Action server to manage sending multiple goals to the navigation stack (move base action server) on a robot in order to achieve them one after another. The package handles everything regarding the goals: receiving, storing, sending, error handling... etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/robofarm.jpeg" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Autonomous Fruit Picking Robot</div>
+
+                                    <p>
+                                        This graduation project was supervised by University of Lincoln, UK and Ainshams University, Egypt. The main target of the project is to design and build an autonomous platform suitable for doing multiple agricultural tasks. This project aims on designing the platform itself and the first module of this platform which is an autonomous fruit picking module based on a 6-DoF robotic arm.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/rowboat.png" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">RowBoat</div>
+
+                                    <p>
+                                        This was the final project for "Design of Mechatronic Systems 2" course at Mechatronics Department, Faculty of Engineering, Ain Shams University.<br>we worked in teams of three as a startup company trying to find a technical solution for either a global or a local problem, our team targeted plastic waste in rivers and worked on designing an autonomous boat for picking the plastic waste from rivers. the project had two phases: off-shore operator remote control, and autonomous target tracking and navigation. phase one, which was the only one implemented due to time limitations, was only implemented.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/prodline.png" alt="Image" width="210" height="210"/>
+                            
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h5">Automated Production Line</div>
+
+                                    <p>
+                                        This was a project for "Design of mechatronic systems 1" course at Ain Shams university. The project was to build an assembly/disasembly production line. The targets were to:
+
+                                        Make it as simple and cheap as possible.<br>
+                                        Classify the products based on a physical feature. Our feature was the color of the lower part.
+                                        Keep the production line in an endless loop.<br>
+                                        Our project won the first place as it had the simplest design, lowest cost, and the smallest footprint of all projects in the course.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                </div>
+            </div>
+            <div class="section">
+                <div class="container cc-education">
+                    <h5 class="h4 text-center mb-4 title">Education</h5>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/ITI.png" alt="Image" width="150" height="150"/>
+                                <div class="h7 pt-2" style="text-align:center" >Information Technology Institute</div>
+                                <p class="category" style="text-align:center">3/2021-12/2021</p>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h6">ARTIFICIAL INTELLIGENCE PROFESSIONAL TRAINING PROGRAM (AI-PRO)</div>
+                                    <p class="category">program is a 9-month post-graduate professional training program in Machine Learning and Artificial Intelligence.The program is developed in partnership with the French Graduate School of Computer Science and Advanced Technologies (EPITA).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-lg-2 col-md-3 cc-reference-header"><img src="images/ASU.png" alt="Image" width="150" height="150"/>
+                                <div class="h7 pt-2" style="text-align:center" >Ain Shams University</div>
+                                <p class="category" style="text-align:center">2015-2020</p>
+                            </div>
+                            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                                <div class="card-body">
+                                    <div class="h6">Bachelor of Engineering in Mechatronics</div>
+                                    <p class="category">Mechatronics is an interdisciplinary field of Mechanical, Electronics, computer science, and control engineering.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- publications-->
+            <!-- Achievements here  -->
+
+            <!-- End of achievements here  -->
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+            <div class="section" id="contact">
+                <div class="cc-contact-information" style="background-image: url('images/project-4.jpg');">
+                    <div class="container">
+                        <div class="cc-contact">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="card mb-0" data-aos="zoom-in">
+                                        <div class="h4 text-center title">Contact Me</div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="card-body">
+                                                    <form action="https://formspree.io/f/xjvjnqpy" method="POST">
+                                                        <div class="p pb-3">
+                                                            <strong>Feel free to contact me
+                                                            </strong>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-user-circle"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-file-text"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="input-group">
+                                                                    <span class="input-group-addon">
+                                                                        <i class="fa fa-envelope"></i>
+                                                                    </span>
+                                                                    <input class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <button class="btn btn-primary" type="submit">Send</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="card-body">
+                                                    <p class="mb-0">
+                                                        <strong>Email</strong>
+                                                    </p>
+                                                    <p>Mohamed.ali.kotb@outlook.com<br></p>
+                                                    <p class="mb-0">
+                                                        <strong>Contact me on Linkedin : </strong><br>
+    
+                                                    </p>
+                                                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="mohamed-ali-854734116" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://eg.linkedin.com/in/mohamed-ali-854734116?trk=profile-badge">Mohamed Ali</a></div>
+              
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html></div><footer class="footer">
+<div class="h4 title text-center">Mohamed Kotb</div>
+<div class="text-center text-muted">
+    <p>Machine Learning and Robotics Engineer <br>
+        Check the source code of this page on
+        <a href="https://github.com/Mohamedkotb97">Github</a>
+    </p>
+   
+</div></footer><script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}</script><!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-155103994-1"></script><script>
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'UA-155103994-1');</script><script src="js/core/jquery.3.2.1.min.js"></script><script src="js/core/popper.min.js"></script><script src="js/core/bootstrap.min.js"></script><script src="js/now-ui-kit.js?v=1.1.0"></script><script src="js/aos.js"></script><script src="scripts/main.js"></script></body></html>
